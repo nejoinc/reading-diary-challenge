@@ -1,6 +1,6 @@
 # Reading Diary [![es](https://img.shields.io/badge/lang-es-green)](README.es.md "Versión en español")
 
-Reading diary is and application to asses the knowledge of OOP concepts in python. The application is a simple reading diary that allows users to add books and add notes to books to keep track of the reading progress. The application is implemented using classes and objects in python.
+Reading diary is an application to asses the knowledge of OOP concepts in python. The application is a simple reading diary that allows users to add books and add notes to books to keep track of the reading progress. The application is implemented using classes and objects in python.
 
 The model of the application is as follows:
 
@@ -23,7 +23,7 @@ The application code is incomplete, the idea is to complete it taking into accou
         Where `{date}`, `{page}` and `{text}` should be replaced with the values of the attributes of the note.
 
 2. Complete the `Book` class taking into account the following requirements:
-    - The class should have a constant `EXCELENT` of type `int` with value `3`.
+    - The class should have a constant `EXCELLENT` of type `int` with value `3`.
     - The class should have a constant `GOOD` of type `int` with value `2`.
     - The class should have a constant `BAD` of type `int` with value `1`.
     - The class should have a constant `UNRATED` of type `int` with value `-1`.
@@ -41,7 +41,7 @@ The application code is incomplete, the idea is to complete it taking into accou
         - Otherwise, the method should create a new `Note` object with the received parameters and add it to the `notes` list of the book. The method should return `True`.
     
     - The class should have an instance method `set_rating` that receives a parameter `rating` of type `int` and returns a `bool` value. The method should do the following:
-        - Checks if the `rating` is not one of the constants `Book.EXCELENT`, `Book.GOOD` or `Book.BAD`. If it is not, the method should return `False`.
+        - Checks if the `rating` is not one of the constants `Book.EXCELLENT`, `Book.GOOD` or `Book.BAD`. If it is not, the method should return `False`.
         - Otherwise, the method should set the `rating` attribute of the book with the value of the parameter `rating` and return `True`.
     
     - The class should have an instance method `get_notes_of_page` that receives a parameter `page` of type `int` and returns a `list[Note]` with the notes of the book that are in the page received as parameter.
@@ -63,7 +63,7 @@ The application code is incomplete, the idea is to complete it taking into accou
 
     - The class should have an `__init__` method that initializes the `books` attribute of type `dict[str, Book]` as an empty dictionary.
 
-    - The class should have an instance method `add_book` that receives the parameters `isbn` of type `str`, `title` of type `str`, `author` of type `str` and `pages` of type `int` and does the following:
+    - The class should have an instance method `add_book` that receives the parameters `isbn` of type `str`, `title` of type `str`, `author` of type `str` and `pages` of type `int` and returns a `bool` value. The method does the following:
         - Checks if the `isbn` is not already in the `books` dictionary. If it is, the method should return `False`.
         - Otherwise, the method creates a new `Book` object with the received parameters and adds it to the `books` dictionary using the `isbn` as the key. The method should return `True`.
     

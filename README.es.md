@@ -1,4 +1,4 @@
-# Diario de Lectura
+# Diario de Lectura [![en](https://img.shields.io/badge/lang-en-blue)](README.md "English version")
 
 Reading Diary es una aplicación para evaluar el conocimiento de los conceptos de POO en Python. La aplicación es un simple diario de lectura que permite a los usuarios agregar libros y añadir notas a los libros para llevar un registro del progreso de lectura. La aplicación está implementada utilizando clases y objetos en Python.
 
@@ -63,7 +63,7 @@ El código de la aplicación está incompleto, la idea es completarlo teniendo e
 
     - La clase debe tener un método `__init__` que inicialice el atributo `books` de tipo `dict[str, Book]` como un diccionario vacío.
 
-    - La clase debe tener un método de instancia `add_book` que reciba los parámetros `isbn` de tipo `str`, `title` de tipo `str`, `author` de tipo `str` y `pages` de tipo `int` y haga lo siguiente:
+    - La clase debe tener un método de instancia `add_book` que reciba los parámetros `isbn` de tipo `str`, `title` de tipo `str`, `author` de tipo `str` y `pages` de tipo `int` y retorne un valor `bool`. El método debe hacer lo siguiente:
         - Verifica si el `isbn` no está en el diccionario `books`. Si lo está, el método debe devolver `False`.
         - De lo contrario, el método crea un nuevo objeto `Book` con los parámetros recibidos y lo añade al diccionario `books` usando el `isbn` como clave. El método debe devolver `True`.
     
