@@ -1,22 +1,7 @@
-[tool.poetry]
-name = "readingdiary"
+[project]
+name = "reading-diary-challenge"
 version = "0.1.0"
-description = "A simple reading diary app to evaluate OOP concepts"
-authors = ["Jesus Hincapie <jahlon@gmail.com>"]
-license = "MIT"
-readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.10"
-pytest = "^8.3.2"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-
-[tool.poetry.scripts]
-readingdiary = "readingdiary.app:main"
-evaluate = "evaluation.invoker:invoke_tests"
-prepare-data = "evaluation.invoker:prepare_data"
+requires-python = ">=3.11"
+dependencies = [
+    "pytest>=8.3.5",
+]
