@@ -1,5 +1,7 @@
 # Diario de Lectura [![en](https://img.shields.io/badge/lang-en-blue)](README.md "English version")
 
+> **Total pruebas a evaluar: 62**
+
 Reading Diary es una aplicación para evaluar el conocimiento de los conceptos de POO en Python. La aplicación es un simple diario de lectura que permite a los usuarios agregar libros y añadir notas a los libros para llevar un registro del progreso de lectura. La aplicación está implementada utilizando clases y objetos en Python.
 
 El modelo de la aplicación es el siguiente:

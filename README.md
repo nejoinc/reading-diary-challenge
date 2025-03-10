@@ -1,5 +1,7 @@
 # Reading Diary [![es](https://img.shields.io/badge/lang-es-green)](README.es.md "Versión en español")
 
+> **Total tests to evaluate: 62**
+
 Reading diary is an application to asses the knowledge of OOP concepts in python. The application is a simple reading diary that allows users to add books and add notes to books to keep track of the reading progress. The application is implemented using classes and objects in python.
 
 The model of the application is as follows:
