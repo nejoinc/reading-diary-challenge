@@ -2,7 +2,7 @@
 
 > **Total tests to evaluate: 62**
 
-Reading diary is an application to asses the knowledge of OOP concepts in python. The application is a simple reading diary that allows users to add books and add notes to books to keep track of the reading progress. The application is implemented using classes and objects in python.
+Reading diary is an application to assess the knowledge of OOP concepts in python. The application is a simple reading diary that allows users to add books and add notes to books to keep track of the reading progress. The application is implemented using classes and objects in python.
 
 The model of the application is as follows:
 
@@ -17,6 +17,7 @@ The application code is incomplete, the idea is to complete it taking into accou
         - `date` of type `datetime`.
         
         In the `__init__` method the class should initialize the attributes `text`, `page` and `date` with the values received as parameters.
+        > **Hint:** To use the type `datetime`, you must import it at the beginning of the file with the statement `from datetime import datetime`
     - The class should have an instance method `__str__` that returns a `str` with the following format:
         ```
         {date} - page {page}: {text}

@@ -18,7 +18,7 @@ El código de la aplicación está incompleto, la idea es completarlo en el arch
         
         En el método `__init__`, la clase debe inicializar los atributos `text`, `page` y `date` con los valores recibidos como parámetros.
 
-        > **Pista:** Para usar el tipo datetime, debes importarlo al inicio del archivo con la instrucción `from datetime import datetime`
+        > **Pista:** Para usar el tipo `datetime`, debes importarlo al inicio del archivo con la instrucción `from datetime import datetime`
     - La clase debe tener un método de instancia `__str__` que devuelva una cadena de texto (`str`) con el siguiente formato:
         ```
         {date} - page {page}: {text}
