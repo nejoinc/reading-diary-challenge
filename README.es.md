@@ -8,7 +8,7 @@ El modelo de la aplicación es el siguiente:
 
 ![Modelo del Diario de Lectura](assets/reading-diary-model.png)
 
-El código de la aplicación está incompleto, la idea es completarlo teniendo en cuenta los siguientes pasos.
+El código de la aplicación está incompleto, la idea es completarlo en el archivo `readingdiary/model.py` teniendo en cuenta los siguientes pasos.
 
 1. Completa la clase `Note` teniendo en cuenta los siguientes requisitos:
     - La clase debe tener un método `__init__` que reciba los siguientes parámetros:
@@ -17,6 +17,8 @@ El código de la aplicación está incompleto, la idea es completarlo teniendo e
         - `date` de tipo `datetime`.
         
         En el método `__init__`, la clase debe inicializar los atributos `text`, `page` y `date` con los valores recibidos como parámetros.
+
+        > **Pista:** Para usar el tipo datetime, debes importarlo al inicio del archivo con la instrucción `from datetime import datetime`
     - La clase debe tener un método de instancia `__str__` que devuelva una cadena de texto (`str`) con el siguiente formato:
         ```
         {date} - page {page}: {text}
@@ -24,7 +26,7 @@ El código de la aplicación está incompleto, la idea es completarlo teniendo e
         
         Donde `{date}`, `{page}` y `{text}` deben ser reemplazados con los valores de los atributos de la nota.
 
-2. Completa la clase `Book` teniendo en cuenta los siguientes requisitos:
+1. Completa la clase `Book` teniendo en cuenta los siguientes requisitos:
     - La clase debe tener una constante `EXCELLENT` de tipo `int` con valor `3`.
     - La clase debe tener una constante `GOOD` de tipo `int` con valor `2`.
     - La clase debe tener una constante `BAD` de tipo `int` con valor `1`.
@@ -61,7 +63,7 @@ El código de la aplicación está incompleto, la idea es completarlo teniendo e
         
         Donde `{title}`, `{author}`, `{isbn}` y `{pages}` deben ser reemplazados con los valores de los atributos del libro. `{rating}` debe ser reemplazada con la cadena de texto `"excellent"`, `"good"`, `"bad"` o `"unrated"` dependiendo del valor del atributo `rating`.
     
-3. Completa la clase `ReadingDiary` teniendo en cuenta los siguientes requisitos:
+2. Completa la clase `ReadingDiary` teniendo en cuenta los siguientes requisitos:
 
     - La clase debe tener un método `__init__` que inicialice el atributo `books` de tipo `dict[str, Book]` como un diccionario vacío.
 
