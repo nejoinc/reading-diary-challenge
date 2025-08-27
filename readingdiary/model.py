@@ -83,8 +83,54 @@ class Book:
 
 
 
+class ReadingDiary:
 
+    def __init__(self):
+        self.books: dict[str, Book] = { }
 
+    def add_book(self, isbn: str, title: str, author: str, pages: int) -> bool:
+        if isbn in self.books:
+            return False
+        else:
+            new_book = Book(isbn, title, author, pages)
+            self.books[isbn] = new_book
+            return True
+
+    def search_by_isbn(self, isbn: str) -> Book | None:
+        if isbn in self.books:
+            return self.books[isbn]
+        else:
+            return None
+
+    def add_note_to_book(self, isbn: str, text: str, page: int, date: datetime) -> bool:
+        book = self.search_by_isbn(isbn)
+        if book is None:
+            return False
+        return book.add_note(text, page, date)
+
+    def rate_book(self, isbn: str, rating: int) -> bool:
+        book = self.search_by_isbn(isbn)
+        if book is None:
+            return False
+        return book.set_rating(rating)
+
+    def book_with_most_notes(self) -> Book | None:
+        if not self.books:
+            return None
+
+        max_notes = -1
+        book_with_max = None
+
+        for book in self.books.values():
+            num_notes = len(book.notes)
+            if num_notes > max_notes:
+                max_notes = num_notes
+                book_with_max = book
+
+        if max_notes == 0:
+            return None
+
+        return book_with_max
 
 
 
